@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+body{
+    background: #161414;
+}
+:root{
+    --primary-color: linear-gradient(135deg,#00feba,#362891) ;
+    --secondary-color: black;
+}
+.darktheme{
+        --primary-color : linear-gradient(135deg,#303031,#3b352d);
+        --secondary-color: rgb(105, 105, 190);
+}
+.card{
+    width: 90%;
+    height: 500px;
+    max-width: 450px;
+    background: var(--primary-color);
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 45px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cityinput{
+    border: 0;
+    outline: 0;
+    background: #d9e7e5;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 35px;
+    margin-right: 16px;
+    font-size: 18px;
+    width: 450px;
+}
+.searchbutton{
+   border: 0;
+   outline: 0;
+   background: #f0eee9;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   cursor: pointer;
+
+
+}
+.searchbutton img{
+    width: 40px;
+}
+.weathericon{
+    width: 170px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.temp{
+    font-size: 50px;
+}
+/* .weather h1{
+    font-size: 80px;
+    font-weight: 500;
+
+} */
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin: -10px;
+    padding: 10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.col{
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 42px;
+    margin-right: 10px;
+    height: 42px;
+}
+.humidity ,.wind{
+    font-size:28px;
+    margin-top: -10px;
+    padding: 5px;
+
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    display: none;
+    color: var(--secondary-color);
+}
+#icon{
+    padding: 5px;
+    display: flex;
+    align-items:flex-start;
+    width: 25px;
+    cursor: pointer;
+}
